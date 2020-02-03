@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Teste</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/test.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="top_bar">
+                <h1 id="title">Accueil</h1><!--id pour l'ancre-->
+                <p>Diffferente citation HTML</p>
+            </div>
+        </header>
+        <div class="main">
+            <h2>Titre avec divers paragraphes</h2>
+            <!--titre + divers paragraphe-->
+            <section class="sec_article">
+                <article>
+                    <p>
+                        Le Lorem Ipsum est simplement du faux texte employé 
+                        dans la composition et la mise en page avant impression.
+                        Le Lorem Ipsum est simplement du faux texte employé 
+                        dans la composition et la mise en page avant impression.
+                        Le Lorem Ipsum est simplement du faux texte employé 
+                        dans la composition et la mise en page avant impression. 
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        Le Lorem Ipsum est simplement du faux texte employé 
+                        dans la composition et la mise en page avant impression.
+                        Le Lorem Ipsum est simplement du faux texte employé 
+                        dans la composition et la mise en page avant impression.
+                        Le Lorem Ipsum est simplement du faux texte employé 
+                        dans la composition et la mise en page avant impression. 
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <mark>HTML</mark> signifie <em>HyperText Markup Language</em>.
+                        Ce langage est utilisé pour <strong>marquer sémantiquement un contenu</strong>.
+                    </p>
+                </article>
+            </section>
+
+            <h2>les listes ordonnées et non ordonnées</h2>
+            <!--les listes ordonnee non ordonnee ou liste dans une liste-->
+            <section class="sec_liste">
+                <!--liste non ordonnée-->
+                <div class="liste_non_ordonnee">
+                    <p>Liste non ordonnée en ligne</p>
+                    <ul>
+                        <li>option 1</li>
+                        <li>option 2</li>
+                        <li>option 3</li>
+                        <li>option 4</li>
+                    </ul>
+                </div>
+                <!--liste ordonnée 1, indentation normal-->
+                <div class="liste_ordonnee_1">
+                    <p>liste ordonnée 1, Element à lire d'un livre, indentation normal sans attribut</p>
+                    <ol>
+                        <li>Introduction</li>
+                        <li>Chapitre 1</li>
+                        <li>Chapitre 2</li>
+                        <li>Chapitre 3</li>
+                        <li>Chapitre 4</li>
+                        <li>Conclusion</li>
+                    </ol>
+                </div>
+                <!--liste ordonnée 2, indentation romain-->
+                <div class="liste_ordonnee_2">
+                    <p>
+                        liste ordonnée 2, Element à lire d'un livre
+                        indentation avec lettre romain grace à l'attribut 
+                        "type" directement dans le html  
+                    </p>
+                    <ol type="I">
+                        <li>Introduction</li>
+                        <li>Chapitre 1</li>
+                        <li>Chapitre 2</li>
+                        <li>Chapitre 3</li>
+                        <li>Chapitre 4</li>
+                        <li>Conclusion</li>
+                    </ol>
+                </div>
+                <!--liste de definition, liste comportant des mot suivis de leur definition-->
+                <div class="liste_def">
+                    <p>liste de definition</p>
+                    <dl><!--remplace ul ou ol-->
+                        <dt>Foot</dt><!--remplace li-->
+                        <dd>sport qui consite à taper dans un ballon avec le pied</dd>
+                        <dt>Basket</dt>
+                        <dd>sport qui consite à mettre un ballon dans un cercle avec la main</dd>
+                        <dt>Handball</dt>
+                        <dd>sport qui consite à jeter une balle dans un but avec la main, ce but sera garder par un gardien</dd>                
+                    </dl>
+                </div>
+                <!--une liste dans une liste-->
+                <div class="liste_multi_liste">
+                    <p>des liste dans une liste en colonne</p>
+                    <ul class="ul_principal">
+                        <li>Oiseau
+                            <ul class="ul_oiseau"><!--liste d'oiseau-->
+                                <li>corbeau</li>
+                                <li>rouge gorge</li>
+                                <li>moineau</li>
+                                <li>pie vert</li>
+                            </ul>
+                        </li>
+                        
+                        <li>chien
+                            <ul class="ul_chien"><!--liste de chien-->
+                                <li>berge allemant</li>
+                                <li>labrador</li>
+                                <li>pite bull</li>
+                                <li>le neo hihi</li>
+                            </ul>
+                        </li>
+                        
+                        <li>autruche</li>
+                        <li>lion</li>
+                        <li>chat
+                            <ul class="ul_chat"><!--liste de chat-->
+                                <li>angora</li>
+                                <li>poile court</li>
+                                <li>poile long</li>
+                                <li>maincoon</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+
+            <h2>les liens</h2>
+            <!--les liens interne externe ou une ancre-->
+            <section class="sec_lien">
+                <!--lien externe-->
+                <div class="lien_ext">
+                    <p>lien externe</p>
+                    <p>lien vers le site <a href="https://www.wikipedia.org/">wikipedia</a></p>
+                </div>
+                <!--lien vers des page interne au site-->
+                <div class="lien_int_site">
+                    <p>lien interne</p>
+                    <p>lien vers des pages du site teste sous forme de liste</p>
+                    <ul>
+                        <li><a href="livre/presentation_de_test/test_presentation.html">presentation</a></li>
+                        <li><a href="livre/test_1.html">test 1</a></li>
+                        <li><a href="livre/test_2.html">test 2</a></li>
+                    </ul>
+                </div>
+                <!--lien vers un site externe mais qui s'ouvre dans un nouveau onglet-->
+                <div>
+                    <p>lien vers un site externe mais qui s'ouvre dans un nouveau onglet</p>
+                    <p>lien vers le site <a href="https://fr.lipsum.com/" target="_blank">loremipsum</a> c'est cool !!!!</p>
+                </div>
+                <!--lien ancre pour se reperer dans une longue page-->
+                <div>
+                    <p>ici on va creer un lien ancre pour remonter en haut de la page</p>
+                    <p>- salut j'ai fini de lire jusqu'ici j'aimerai remonter en haut de la page svp</p>
+                    <p>- ok oui pas de soucis, clique <a href="#title">ici</a></p>
+                </div>
+                <!--lien vers une adresse mail, lien d'acces a l'envoie d'un mail-->
+                <div>
+                    <p>permet de faire envoyer un mail ( a l'adresse mail renseigner dans l'attribut ) depuis l'application mail de l'utilisateur</p>
+                    <p>attention l'utilisateur dois avoir configurer un application</p>
+                    <p>salut si tu veux m'ecrire clique <a href="mailto:amaorus@gmail.com">ici</a></p>
+                </div>
+                <!--lien pour telecharger un document-->
+                <div>
+                    <p>ici c'est un lien pour telecharger un fichier, attention on peux pas faire telecharger n'importe quoi</p>
+                    <p>ici on telecharge un pdf donc sa passe</p>
+                    <p>telecharger le fichier <a href="livre/catagorie_feminine_2018_2019.pdf" download="pg-catagorie_feminine_2018_2019" target="_blank">ici</a></p>
+                </div>
+            </section>
+        </div>
+        
+    </body>
+</html>
